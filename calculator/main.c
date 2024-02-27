@@ -25,6 +25,9 @@ int main(int argc, char *argv[]){
     choice = argv[3][0];
     b = atoi(argv[4]);
   }
+
+  
+
   // Evaluate operation based on user's choice.
   int result; 
   switch (choice){

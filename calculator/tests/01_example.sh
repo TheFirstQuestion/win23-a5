@@ -34,3 +34,9 @@ if [[ $($CALCULATOR 6 '*' 6) -ne 36 ]]; then
   echo 'ERROR! A valid run of the calculator (6 * 6) failed to produce 36 as an output!'
   exit 1
 fi
+
+# Test 05: Ensure program errors with no arguments
+if $CALCULATOR; then # If the return code of $PROGRAM is zero (i.e. success)...
+  echo 'ERROR! An invalid run of the application apparently succeeded?!'
+  exit 1
+fi
