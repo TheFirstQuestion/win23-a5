@@ -4,5 +4,5 @@ calculator: main.o addition.o subtraction.o multiplication.o division.o
 calculator.o: main.c
 	gcc -c main.c
 
-clean: 
+clean:
 	rm -f calculator *.o
